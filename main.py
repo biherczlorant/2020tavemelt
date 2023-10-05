@@ -2,13 +2,13 @@ data = []
 with open("tavirathu13.txt", "r") as f:
     for sor in f:
         darab = sor.strip().split(" ")
-        kecske = {'telepules': darab[0],
+        adat = {'telepules': darab[0],
                   'ora': darab[1][:2],
                   'perc': darab[1][2:],
                   'szelirany': darab[2][:3],
                   'szelerosseg': int(darab[2][3:]),
                   'homerseklet': int(darab[3])}
-        data.append(kecske)
+        data.append(adat)
 
 # 2. feladat
 print("2. feladat")
